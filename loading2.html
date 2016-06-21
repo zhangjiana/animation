@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .box{width:600px;height:300px;
+            margin:0 auto;
+            border: 1px solid #ccc;}
+        .load{width:200px;height:200px;border: 1px solid #cccccc;margin:50px auto;
+            position: relative;}
+        .load i{display: block;width:40px;height:40px;border-radius: 50%;
+                border:2px solid #333;border-color:transparent #333;}
+        .load i:first-child{position: absolute;left:0;top:0;
+            -webkit-animation: loading2 1s 0.2s infinite}
+        .load i:last-child{position: absolute;left:10px;top:10px;width:20px;height:20px;
+            -webkit-animation: loading2 1s 0.4s infinite reverse}
+        @-webkit-keyframes loading2 {
+            0%{transform: scale(1) rotate(0deg);}
+            50%{transform: scale(.6) rotate(180deg);}
+            100%{transform: scale(1) rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="load">
+        <i></i>
+        <i></i>
+    </div>
+</div>
+</body>
+</html>

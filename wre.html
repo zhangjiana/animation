@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        *{margin:0 ;padding: 0;}
+        /*.box{width:25px;height:25px;margin: 100px auto;}
+
+        @-webkit-keyframes move{
+            0% {transform: rotate(0deg)}
+            50% {transform: rotate(180deg)}
+            100% {transform: rotate(360deg)}
+        }
+
+        .box{-webkit-animation:move .2s infinite;}
+
+        .box i{width:100%;height:100%;border-radius: 100%;display: block;
+            background: -webkit-linear-gradient(transparent 0%,
+                                                transparent 70%,
+                                                #333 30%,
+                                                #333 70%);}
+        */
+        .load
+        {
+            width:200px;
+            height:200px;
+            border:1px solid #FF0000;
+            padding: 100px 100px;
+        }
+        .load i
+        {
+            width:5px ;
+            height:65px;
+            background: #000;
+            display: block;
+            float: left;
+            margin-right: 10px;
+        }
+
+        @-webkit-keyframes moving{
+            0%{transform: scaleY(1)}
+            50%{transform: scaleY(0.6)}
+            100%{transform: scaleY(1)}
+        }
+
+        .load i:nth-child(1){-webkit-animation: moving 1s 0.1s linear infinite ;}
+        .load i:nth-child(2){-webkit-animation: moving 1s 0.2s linear infinite ;}
+        .load i:nth-child(3){-webkit-animation: moving 1s 0.3s linear infinite ;}
+        .load i:nth-child(4){-webkit-animation: moving 1s 0.4s linear infinite ;}
+        .load i:nth-child(5){-webkit-animation: moving 1s 0.5s linear infinite ;}
+        .load i:nth-child(6){-webkit-animation: moving 1s 0.6s linear infinite ;}
+        .load i:nth-child(7){-webkit-animation: moving 1s 0.7s linear infinite ;}
+        .load i:nth-child(8){-webkit-animation: moving 1s 0.8s linear infinite ;}
+        .load i:nth-child(9){-webkit-animation: moving 1s 0.9s linear infinite ;}
+    </style>
+</head>
+<body>
+
+<!--<div class="box">
+    <i></i>
+</div>
+-->
+<div class="load">
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+</body>
+</html>

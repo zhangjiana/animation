@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>load</title>
+    <style type="text/css">
+        .box{width:600px;height:300px;
+            margin:0 auto;
+            border: 1px solid #ccc;}
+        @-webkit-keyframes loading1{
+            0%{transform:rotate(0deg)}
+            50%{transform:rotate(180deg)}
+            100%{transform:rotate(360deg)}
+        }
+        .load{width:40px;height:40px;margin:100px auto;
+            -webkit-animation:loading1 0.6s linear 0s infinite}
+        .load i{display: block;width:100%;height:100%;border-radius:50%;
+            background:-webkit-linear-gradient(transparent 0%, transparent 70%,#333 30%, #333 100%)}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="load"><i></i></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .load{width:300px;height:200px;border: 1px solid #cccccc;
+            margin:200px auto;}
+        .circle{position: relative;width:100px;height:20px;margin:20px auto;border: 1px solid #cccccc;}
+        .load i{display: block;width:20px;height:20px;border-radius: 50%;
+            background:#000000;position: absolute;margin-right:10px;}
+      /*  @-webkit-keyframes loading3 {
+            0%{left: 100px;top:0;width:20px;height:20px;}
+            80%{left: 0;top:0;width:20px;height:20px;}
+            85%{left: 0;top:-20px;width:40px;height:20px;background:red;}
+            90%{width:20px;height:20px;background:#000;}
+            100%{left: 100px;top:0;width:20px;height:20px;background:#000;}
+        }*/
+        @-webkit-keyframes loading3{
+            0%{left:100px; top:0;}
+            80%{left:0; top:0;}
+            85%{left:0; top:-20px;  width:20px; height:20px;}
+            90%{width:40px; height:20px;}
+            95%{left:100px; top:-20px; width:20px; height:20px;}
+            100%{left:100px; top:0;}
+        }
+
+
+        .circle i:nth-child(1){-webkit-animation: loading3 2s linear 0s infinite;}
+        .circle i:nth-child(2){-webkit-animation: loading3 2s linear -0.4s infinite;}
+        .circle i:nth-child(3){-webkit-animation: loading3 2s linear -0.8s infinite;}
+        .circle i:nth-child(4){-webkit-animation: loading3 2s linear -1.2s infinite;}
+        .circle i:nth-child(5){-webkit-animation: loading3 2s linear -1.6s infinite;}
+
+    </style>
+</head>
+<body>
+<div class="load">
+    <div class="circle">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+</div>
+</body>
+</html>
